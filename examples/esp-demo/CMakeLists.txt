@@ -4,8 +4,11 @@ cmake_minimum_required(VERSION 3.5)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
+set(ARKUILIB_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../)
 set(ESP_ARKUI_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../esp-arkui)
 list(APPEND EXTRA_COMPONENT_DIRS ${ESP_ARKUI_DIR}/components)
+
+add_compile_definitions(HORIZONTAL_RESOLUTION=600 VERTICAL_RESOLUTION=1024)
 
 add_compile_options(-fdiagnostics-color=always)
 

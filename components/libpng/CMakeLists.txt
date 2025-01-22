@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../third_party/libpng/libpng-1.6.38)
+set(TARGET_DIR ${ARKUILIB_DIR}/third_party/libpng/libpng-1.6.38)
 
 set(SRCS 
 ${TARGET_DIR}/png.c

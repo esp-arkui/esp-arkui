@@ -25,23 +25,23 @@ static const char *TAG = "main";
 
 static void fs_init()
 {
-    // const esp_vfs_fat_mount_config_t mount_config = {
-    //     .max_files = 4,
-    //     .format_if_mount_failed = false,
-    //     .allocation_unit_size = CONFIG_WL_SECTOR_SIZE,
-    //     .use_one_fat = false,
-    // };
+    const esp_vfs_fat_mount_config_t mount_config = {
+        .max_files = 4,
+        .format_if_mount_failed = false,
+        .allocation_unit_size = CONFIG_WL_SECTOR_SIZE,
+        .use_one_fat = false,
+    };
 
     char *base_path = CONFIG_BSP_SD_MOUNT_POINT;
-    // ESP_LOGI(TAG, "Mounting FAT filesystem in read/write mode");
-    // static wl_handle_t wl_handle = WL_INVALID_HANDLE;
-    // esp_err_t err = esp_vfs_fat_spiflash_mount_rw_wl(base_path, "storage", &mount_config, &wl_handle);
+    ESP_LOGI(TAG, "Mounting FAT filesystem in read/write mode");
+    static wl_handle_t wl_handle = WL_INVALID_HANDLE;
+    esp_err_t err = esp_vfs_fat_spiflash_mount_rw_wl(base_path, "storage", &mount_config, &wl_handle);
 
-    // if (err != ESP_OK) {
-    //     ESP_LOGE(TAG, "Failed to mount FATFS (%s)", esp_err_to_name(err));
-    //     return;
-    // }
-    bsp_sdcard_mount(); // 挂载SD卡
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to mount FATFS (%s)", esp_err_to_name(err));
+        return;
+    }
+    // bsp_sdcard_mount(); // 挂载SD卡
 
     {
         DIR *dir;

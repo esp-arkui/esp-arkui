@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../third_party/libjpeg-turbo/libjpeg-turbo-2.1.1)
+set(TARGET_DIR ${ARKUILIB_DIR}/third_party/libjpeg-turbo/libjpeg-turbo-2.1.1)
 
 set(SRCS 
 ${TARGET_DIR}/jcapimin.c

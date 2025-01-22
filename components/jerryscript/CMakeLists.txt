@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../third_party/jerryscript)
+set(TARGET_DIR ${ARKUILIB_DIR}/third_party/jerryscript)
 
 set(SRCS 
 ${TARGET_DIR}/jerry-core/api/jerry-debugger-transport.c

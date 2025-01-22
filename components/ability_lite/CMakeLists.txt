@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../foundation/ability/ability_lite)
+set(TARGET_DIR ${ARKUILIB_DIR}/foundation/ability/ability_lite)
 
 set(SRCS 
 

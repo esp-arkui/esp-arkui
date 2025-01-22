@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../foundation/arkui/ace_engine_lite)
+set(TARGET_DIR ${ARKUILIB_DIR}/foundation/arkui/ace_engine_lite)
 
 set(SRCS 
 ${TARGET_DIR}/frameworks/src/core/animation/transition_impl.cpp
@@ -186,7 +186,7 @@ ${TARGET_DIR}/frameworks/native_engine
 idf_component_register(
     SRCS ${SRCS}
     INCLUDE_DIRS ${INCLUDE_DIRS}
-    REQUIRES ui_lite jerryscript json ability_lite porting jerry-port
+    REQUIRES ui_lite jerryscript json ability_lite porting 
 )
 
 target_compile_options(${COMPONENT_LIB} PRIVATE -Wno-missing-field-initializers)

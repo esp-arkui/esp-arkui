@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../third_party/icu)
+set(TARGET_DIR ${ARKUILIB_DIR}/third_party/icu)
 
 set(SRCS 
 ${TARGET_DIR}/icu4c/source/common/cmemory.cpp

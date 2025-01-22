@@ -26,9 +26,7 @@
 
 #define LAUNCHER_BUNDLE_NAME "com.huawei.launcher"
 #define JS_BUNDLE_NAME "com.app.music_player"
-// #define JS_APP_PATH "/rootfs/player" // "/data/js"
-// #define JS_APP_PATH "/rootfs/2048" // "/data/js"
-#define JS_APP_PATH "/rootfs/MainAbility" // "/data/js"
+#define JS_APP_PATH "/rootfs/showcase" // "/data/js"
 
 #define CHECK_ERR(ret) \
     if (ret != 0) { \

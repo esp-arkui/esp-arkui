@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../third_party/zlib)
+set(TARGET_DIR ${ARKUILIB_DIR}/third_party/zlib)
 
 set(SRCS 
 ${TARGET_DIR}/adler32.c

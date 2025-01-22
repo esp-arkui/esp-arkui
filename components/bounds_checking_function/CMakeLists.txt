@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../third_party/bounds_checking_function)
+set(TARGET_DIR ${ARKUILIB_DIR}/third_party/bounds_checking_function)
 
 set(SRCS 
 "${TARGET_DIR}/src/fscanf_s.c"

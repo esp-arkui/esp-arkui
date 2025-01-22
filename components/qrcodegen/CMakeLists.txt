@@ -1,6 +1,6 @@
 
 
-set(TARGET_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../third_party/qrcodegen)
+set(TARGET_DIR ${ARKUILIB_DIR}/third_party/qrcodegen)
 
 set(SRCS 
 ${TARGET_DIR}/cpp/qrcodegen.cpp
