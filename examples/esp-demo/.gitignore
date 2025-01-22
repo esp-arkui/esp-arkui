@@ -1,0 +1,9 @@
+**/squareline/backup/**
+**/squareline/autosave/**
+components/lvgl/**
+sdkconfig
+
+*.log
+*.png
+*.lock
+build
